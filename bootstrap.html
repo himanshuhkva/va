@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bootstrap</title>
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="js/bootstrap.js">
+<style>
+    body{
+    background-color:#e9ecef;
+}
+
+/* container */
+.container-fluid{
+    padding: 6% 15%;
+    margin-top: 100px;
+}
+
+.fluid{
+    padding: 5%;
+}
+
+
+h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+p{
+    line-height: 1.8;
+    word-spacing: .21rem;
+    font-size: larger;
+    margin-bottom: 30px;
+}
+
+.img2{
+    height: 200px;
+    overflow: hidden;
+}
+
+.img4-in{
+    height:420px ;
+}
+
+.card-div{
+    padding-left: 80px;
+}
+
+@media only screen and (max-width:767px){
+    
+    body{
+        text-align: center;
+        padding: 5% ;
+    }
+    
+    .btn{
+        width: 100% !important;
+        margin-top: 20px;
+    }
+
+    .container-fluid{
+        padding: 5%;
+    }
+
+    .img3,.img4{
+        margin-top: 50px;
+    }
+
+    .fluid p,.card-div{
+        padding: 0;
+    }
+}
+</style>
+</head>
+<body>
+
+    <!-- container-1 simple-container-->
+
+    <div class="container-fluid bg-light shadow text-center mt-0 ">
+        <img src="https://getbootstrap.com/docs/5.2/assets/brand/bootstrap-logo.svg" width="70px" class="img-fluid mb-3">
+        <h1>Centered Hero</h1>
+        <p class="w-75 mx-auto mb-4 ">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+        
+        <div class="row">
+            <div class="col-lg-6 col-md-6 text-end">
+                <input type="button" value="Primary Button" class="btn btn-primary btn-lg">
+            </div>
+            <div class="col-lg-6 col-md-6 text-start">
+                <input type="button" value="Secondary" class="btn btn-outline-secondary btn-lg ">
+            </div>
+        </div>
+    </div>
+
+    <!-- container2 -->
+
+    <div class="container-fluid text-center bg-light shadow">
+        <h1>Centered Screenshot</h1>
+        <p class="w-75 mx-auto">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+
+        <div class="row mb-5">
+            <div class="col-lg-6 col-md-6 text-end">
+                <input type="button" value="Primary Button" class="btn btn-primary btn-lg ">
+            </div>
+            
+            <div class="col-lg-6 col-md-6 text-start">
+                <input type="button" value="Secondary" class="btn btn-outline-secondary btn-lg ">
+            </div>
+        </div>
+
+        <div class="img2">
+            <img src="https://getbootstrap.com/docs/5.2/examples/heroes/bootstrap-docs.png" class="img-fluid shadow" width="700px">
+        </div>
+    </div>
+
+
+    <!-- container3 -->
+
+    <div class="container-fluid bg-light fluid shadow">
+        <div class="row">
+            <div class="col-lg-6 col-md-6">
+                <h1>Responsive left-aligned hero with image</h1>
+                <p>Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+
+                <div class="row">
+                    <div class="col-lg-3 col-md-3">
+                        <input type="button" value="Primary" class="btn btn-primary btn-lg">
+                    </div>
+                    <div class="col-lg-9 col-md-9 text-start">
+                        <input type="button" value="Default" class="btn btn-outline-secondary btn-lg">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <img src="https://getbootstrap.com/docs/5.2/examples/heroes/bootstrap-themes.png" width="100%" class="img-fluid img3">
+            </div>
+        </div>
+    </div>
+
+    <!-- container4 -->
+
+    <div class="container-fluid bg-light fluid shadow">
+        <div class="row">
+            <div class="col-lg-6 col-md-6">
+                <h1>Vertically centered hero sign-up form</h1>
+                <p>Below is an example form built entirely with Bootstrap’s form controls. Each required form group has a validation state that can be triggered by attempting to submit the form without completing it.
+                </p>
+            </div>
+            <div class="col-lg-6 col-md-6 card-div">
+                <div class="card p-5 w-100 ">
+                    <div class="card-body">
+                        <input type="text" class="w-100 mb-3 form-control" placeholder="Your Name">
+                        <input type="text" class="w-100 form-control mb-3" placeholder="Password">
+                        <input type="checkbox" class="form-check-input me-2 mb-4"><label>Remember Me</label> 
+                        <br>
+                        <input type="button" value="Sign Up" class="btn btn-primary btn-lg w-100 ">
+                        <hr>
+                        <h6>By clicking Sign up, you agree to the terms of use.</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- container5 -->
+
+    <div class="container-fluid bg-light shadow fluid">
+        <div class="container shadow-lg p-5 ">
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <h1>Border hero with cropped image and shadows</h1>
+                    <p>Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+
+                    <div class="row">
+                        <div class="col-lg-3 col-md-">
+                            <input type="button" value="Primary" class="btn btn-primary btn-lg">
+                        </div>
+                        <div class="col-lg-9 col-md-9 text-start">
+                            <input type="button" value="Default" class="btn btn-outline-secondary btn-lg">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 img4">
+                    <img src="https://getbootstrap.com/docs/5.2/examples/heroes/bootstrap-docs.png" class="img-fluid shadow img4-in">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid bg-dark text-center mb-5 shadow">
+        <h1 class="text-light">Dark Mode Hero</h1>
+        <p class="text-secondary">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+
+        <div class="row">
+            <div class="col-lg-6 col-m-6 text-end">
+                <input type="button" value="Custom Button" class="btn btn-outline-primary btn-lg">
+            </div>
+            <div class="col-lg-6 col-m-6 text-start ">
+                <input type="button" value="Secondary" class="btn btn-outline-secondary btn-lg text-light">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
